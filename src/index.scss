@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+$text-color : #FCFCFC;
+$text-color-gray: #9A9A9A;
+
+* {
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: "Lato", serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+  background: rgb(0, 0, 26);
+  color: $text-color;
+  display: flex;
+  justify-content: center;
+
+  :where(h1, h2, h3, h4, h5) {
+    font-family: 'Krona One', serif;
+  }
+
+  h1 {
+    text-shadow: rgba(255, 255, 255, 0.49) 0px 0px 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: $text-color-gray;
+  }
+
+
+  button {
+    cursor: pointer;
+    background-color: rgba(148, 148, 148, 0.294);
+    backdrop-filter: blur(50px);
+    color: $text-color;
+    width: 235px;
+    height: 45px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    transition: background-color .4s linear;
+
+    &:hover {
+      background-color: rgba(233, 233, 233, 0.37);
+      border-bottom: 1px solid rgba(233, 233, 233, 0.37);
+    }
+
+    &:active {
+      transform: scale(.95);
+    }
+
+  }
+}
+
+
+#yourway,#discover,#services,#reliable{
+    padding-bottom: 50px;
+  h2{
+    display: inline-block;
+    text-align: center !important;
+    justify-self: center;
+    border-bottom: 5px solid transparent;
+    border-image: url(../../assets/line.png) 1% round;
+    margin-block: 0 50px;
+    line-height: 4rem;
+  }
+}

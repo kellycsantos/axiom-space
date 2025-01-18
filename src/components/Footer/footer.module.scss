@@ -1,0 +1,45 @@
+@import '../../index.scss';
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 36px;
+    flex-wrap: wrap;
+    background: url('../../assets/mars_landscape.png') no-repeat left top;
+    height: min-content;
+    margin-bottom: 50px;
+
+
+    img {
+        width: 120px;
+        margin-bottom: 24px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    ul {
+        padding: 24px 36px;
+
+        li {
+            &:first-child {
+                font-size: 24px;
+                margin-bottom: 18px;
+                font-weight: 700;
+            }
+
+            a {
+                display: inline-flex;
+                color: #fff;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    &>p {
+        color: $text-color-gray;
+    }
+}

@@ -1,0 +1,74 @@
+@import '../../index.scss';
+
+#yourway {
+    margin-bottom: 50px;
+    text-align: center;
+
+    // h2{
+    //     display: inline-block;
+    //     text-align: center !important;
+    //     justify-self: center;
+    //     border-bottom: 5px solid transparent;
+    //     border-image: url(../../assets/line.png) 1% round;
+    //     margin-block: 50px;
+    //     line-height: 4rem;
+    //   }
+    .route {
+        height: fit-content !important;
+        display: grid;
+        grid-template-areas: "a a" "b c" "d d";
+        background: url('../../assets/line_vertical.png') center no-repeat;
+        background-size: auto calc(100% - (300px));
+
+  
+    
+        div{
+            display: inline-flex;
+            height: min-content;
+            justify-content: center;
+            align-items: baseline;
+
+            &.primeira {
+                grid-area: a;
+                
+                img{
+                    height: 300px;
+                }
+            }
+            &:where(.segunda, .terceira ){
+                height: max-content;
+                padding: 56px 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                row-gap: 56px;
+                max-width: 300px;
+                p{
+                    font-weight: 300;
+                }
+            }
+            &.segunda {
+                // background: rgb(34, 230, 50);
+                grid-area: b;
+                justify-self: center;
+               
+            }
+
+            &.terceira {
+                // background: rgb(241, 29, 128);
+                grid-area: c;
+                margin-top: 56px;
+        
+                justify-self: center;
+            }
+
+            &.quarta {
+                grid-area: d;
+                img{
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
