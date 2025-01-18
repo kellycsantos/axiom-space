@@ -16,7 +16,7 @@ export default function Home() {
             </article>
             <article>
                 <picture>
-                    <source srcset={marsFull} media='(min-width:1080px)' />
+                    <source srcSet={marsFull} media='(min-width:1080px)' />
                     <img src={mars} alt='mars'/>
                 </picture>
 
