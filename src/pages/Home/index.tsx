@@ -1,5 +1,5 @@
 import style from './home.module.scss'
-import mars from '../../assets/mars.png'
+import mars from '../../assets/MARS.png'
 import marsFull from '../../assets/full_mart.png'
 export default function Home() {
     return (
